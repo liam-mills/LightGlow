@@ -1,0 +1,15 @@
+doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet' type='text/css' href='style.css')
+        title Light Glow
+    body
+        div.container
+            - let layerCount = 20
+            - let groupCount = 2
+            - for (var x = 1; x <= groupCount; x++)
+                div(class='layer-group-' + x)
+                    - for (var i = 1; i <= layerCount; i++)
+                        div(class='layer-' + i)

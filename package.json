@@ -1,0 +1,26 @@
+{
+  "name": "light-glow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass style.scss:style.css & pug index.pug -P",
+    "sass": "sass --watch style.scss:style.css",
+    "pug": "pug -w index.pug -P"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liam-mills/LightGlow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liam-mills/LightGlow/issues"
+  },
+  "homepage": "https://github.com/liam-mills/LightGlow#readme",
+  "devDependencies": {
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.54.4"
+  }
+}
