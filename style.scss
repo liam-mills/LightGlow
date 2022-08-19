@@ -10,7 +10,7 @@
 
 body {
     background: #101010; 
-    color:#E4E4E4;
+    color:#FFFFFF;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -18,7 +18,7 @@ body {
     align-items: center;
 }
 
-// Settings
+// Settings / Variables
 
 $layer-count: 20;
 $layer-group-count: 3;
@@ -29,6 +29,17 @@ $border-radius-min: 1px;
 $border-width-max: 40px;
 $border-width-min: 2px;
 $box-shadow-width: 4px;
+
+$color1: #EF5350;
+$color2: #EC407A;
+$color3: #E040FB;
+$color4: #3D5AFE;
+$color5: #2979FF;
+$color6: #18FFFF;
+$color7: #1DE9B6;
+$color8: #00E676;
+$color9: #EEFF41;
+$color10: #FF6D00;
 
 .container {
     overflow: hidden;
@@ -54,12 +65,12 @@ $box-shadow-width: 4px;
             z-index: 1;
             & > div[class^="layer-"] {
                 animation: color 20s linear infinite;
-                border-color: #EF5350;
+                border-color: $color1;
                 box-shadow: 
-                    0 0 0 $box-shadow-width #EF5350, 
-                    0 0 6px $box-shadow-width rgba( #EF5350, 0.2 ), 
-                    0 0 0 $box-shadow-width #EF5350 inset, 
-                    0 0 12px $box-shadow-width rgba( #EF5350, 0.2 ) inset;
+                    0 0 0 $box-shadow-width $color1, 
+                    0 0 6px $box-shadow-width rgba( $color1, 0.2 ), 
+                    0 0 0 $box-shadow-width $color1 inset, 
+                    0 0 12px $box-shadow-width rgba( $color1, 0.2 ) inset;
             }
         }
         &.layer-group-2 {
@@ -106,91 +117,91 @@ $box-shadow-width: 4px;
 
 @keyframes color {
     0% {
-        border-color: #EF5350;
+        border-color: $color1;
         box-shadow: 
-            0 0 0 $box-shadow-width #EF5350, 
-            0 0 6px $box-shadow-width rgba( #EF5350, 0.2 ), 
-            0 0 0 $box-shadow-width #EF5350 inset, 
-            0 0 12px $box-shadow-width rgba( #EF5350, 0.2 ) inset;
+            0 0 0 $box-shadow-width $color1, 
+            0 0 6px $box-shadow-width rgba( $color1, 0.2 ), 
+            0 0 0 $box-shadow-width $color1 inset, 
+            0 0 12px $box-shadow-width rgba( $color1, 0.2 ) inset;
     }
     10% {
-        border-color: #EC407A;
+        border-color: $color2;
         box-shadow: 
-            0 0 0 $box-shadow-width #EC407A, 
-            0 0 6px $box-shadow-width rgba( #EC407A, 0.2 ), 
-            0 0 0 $box-shadow-width #EC407A inset, 
-            0 0 12px $box-shadow-width rgba( #EC407A, 0.2 ) inset;
+            0 0 0 $box-shadow-width $color2, 
+            0 0 6px $box-shadow-width rgba( $color2, 0.2 ), 
+            0 0 0 $box-shadow-width $color2 inset, 
+            0 0 12px $box-shadow-width rgba( $color2, 0.2 ) inset;
     }
     20% {
-        border-color: #E040FB;
+        border-color: $color3;
         box-shadow: 
-            0 0 0 $box-shadow-width #E040FB, 
-            0 0 6px $box-shadow-width rgba( #E040FB, 0.2 ), 
-            0 0 0 $box-shadow-width #E040FB inset, 
-            0 0 12px $box-shadow-width rgba( #E040FB, 0.2 ) inset;
+            0 0 0 $box-shadow-width $color3, 
+            0 0 6px $box-shadow-width rgba( $color3, 0.2 ), 
+            0 0 0 $box-shadow-width $color3 inset, 
+            0 0 12px $box-shadow-width rgba( $color3, 0.2 ) inset;
     }
     30% {
-        border-color: #3D5AFE;
+        border-color: $color4;
         box-shadow: 
-            0 0 0 $box-shadow-width #3D5AFE, 
-            0 0 6px $box-shadow-width rgba( #3D5AFE, 0.2 ), 
-            0 0 0 $box-shadow-width #3D5AFE inset, 
-            0 0 12px $box-shadow-width rgba( #3D5AFE, 0.2 ) inset;
+            0 0 0 $box-shadow-width $color4, 
+            0 0 6px $box-shadow-width rgba( $color4, 0.2 ), 
+            0 0 0 $box-shadow-width $color4 inset, 
+            0 0 12px $box-shadow-width rgba( $color4, 0.2 ) inset;
     }
     40% {
-        border-color: #2979FF;
+        border-color: $color5;
         box-shadow: 
-            0 0 0 $box-shadow-width #2979FF, 
-            0 0 6px $box-shadow-width rgba( #2979FF, 0.2 ), 
-            0 0 0 $box-shadow-width #2979FF inset, 
-            0 0 12px $box-shadow-width rgba( #2979FF, 0.2 ) inset;
+            0 0 0 $box-shadow-width $color5, 
+            0 0 6px $box-shadow-width rgba( $color5, 0.2 ), 
+            0 0 0 $box-shadow-width $color5 inset, 
+            0 0 12px $box-shadow-width rgba( $color5, 0.2 ) inset;
     }
     50% {
-        border-color: #18FFFF;
+        border-color: $color6;
         box-shadow: 
-            0 0 0 $box-shadow-width #18FFFF, 
-            0 0 6px $box-shadow-width rgba( #18FFFF, 0.2 ), 
-            0 0 0 $box-shadow-width #18FFFF inset, 
-            0 0 12px $box-shadow-width rgba( #18FFFF, 0.2 ) inset;
+            0 0 0 $box-shadow-width $color6, 
+            0 0 6px $box-shadow-width rgba( $color6, 0.2 ), 
+            0 0 0 $box-shadow-width $color6 inset, 
+            0 0 12px $box-shadow-width rgba( $color6, 0.2 ) inset;
     }
     60% {
-        border-color: #1DE9B6;
+        border-color: $color7;
         box-shadow: 
-            0 0 0 $box-shadow-width #1DE9B6, 
-            0 0 6px $box-shadow-width rgba( #1DE9B6, 0.2 ), 
-            0 0 0 $box-shadow-width #1DE9B6 inset, 
-            0 0 12px $box-shadow-width rgba( #1DE9B6, 0.2 ) inset;
+            0 0 0 $box-shadow-width $color7, 
+            0 0 6px $box-shadow-width rgba( $color7, 0.2 ), 
+            0 0 0 $box-shadow-width $color7 inset, 
+            0 0 12px $box-shadow-width rgba( $color7, 0.2 ) inset;
     }
     70% {
-        border-color: #00E676;
+        border-color: $color8;
         box-shadow: 
-            0 0 0 $box-shadow-width #00E676, 
-            0 0 6px $box-shadow-width rgba( #00E676, 0.2 ), 
-            0 0 0 $box-shadow-width #00E676 inset, 
-            0 0 12px $box-shadow-width rgba( #00E676, 0.2 ) inset;
+            0 0 0 $box-shadow-width $color8, 
+            0 0 6px $box-shadow-width rgba( $color8, 0.2 ), 
+            0 0 0 $box-shadow-width $color8 inset, 
+            0 0 12px $box-shadow-width rgba( $color8, 0.2 ) inset;
     }
     80% {
-        border-color: #EEFF41;
+        border-color: $color9;
         box-shadow: 
-            0 0 0 $box-shadow-width #EEFF41, 
-            0 0 6px $box-shadow-width rgba( #EEFF41, 0.2 ), 
-            0 0 0 $box-shadow-width #EEFF41 inset, 
-            0 0 12px $box-shadow-width rgba( #EEFF41, 0.2 ) inset;
+            0 0 0 $box-shadow-width $color9, 
+            0 0 6px $box-shadow-width rgba( $color9, 0.2 ), 
+            0 0 0 $box-shadow-width $color9 inset, 
+            0 0 12px $box-shadow-width rgba( $color9, 0.2 ) inset;
     }
     90% {
-        border-color: #FF6D00;
+        border-color: $color10;
         box-shadow: 
-            0 0 0 $box-shadow-width #FF6D00, 
-            0 0 6px $box-shadow-width rgba( #FF6D00, 0.2 ), 
-            0 0 0 $box-shadow-width #FF6D00 inset, 
-            0 0 12px $box-shadow-width rgba( #FF6D00, 0.2 ) inset;
+            0 0 0 $box-shadow-width $color10, 
+            0 0 6px $box-shadow-width rgba( $color10, 0.2 ), 
+            0 0 0 $box-shadow-width $color10 inset, 
+            0 0 12px $box-shadow-width rgba( $color10, 0.2 ) inset;
     }
     100% {
-        border-color: #EF5350;
+        border-color: $color1;
         box-shadow: 
-            0 0 0 $box-shadow-width #EF5350, 
-            0 0 6px $box-shadow-width rgba( #EF5350, 0.2 ), 
-            0 0 0 $box-shadow-width #EF5350 inset, 
-            0 0 12px $box-shadow-width rgba( #EF5350, 0.2 ) inset;
+            0 0 0 $box-shadow-width $color1, 
+            0 0 6px $box-shadow-width rgba( $color1, 0.2 ), 
+            0 0 0 $box-shadow-width $color1 inset, 
+            0 0 12px $box-shadow-width rgba( $color1, 0.2 ) inset;
     }
 }
