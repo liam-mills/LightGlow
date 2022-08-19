@@ -7,4 +7,4 @@ So I set up a small animation which moves a colourful shape around a "glass" cub
 
 This effect works by having multiple backdrop-filter layers stacked on top of each other, giving the illusion of a 3D object being affected by light.
 
-Uses SASS and Pug to compile. Run `npm i` to install, and `npm run compile` to get compile.
+Uses SASS and Pug to compile. Run `npm i` to install, and `npm run compile` to compile.
