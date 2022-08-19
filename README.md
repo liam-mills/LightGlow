@@ -1,4 +1,7 @@
 # Light Glow
+
+[View Demo](https://liam-mills.github.io/LightGlow/)
+
 I found this old project from awhile ago where I realised you can use the CSS [backdrop-filter](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter) effect to emulate light emission. 
 So I set up a small animation which moves a colourful shape around a "glass" cuboid in the middle.
 
